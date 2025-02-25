@@ -1,7 +1,7 @@
 import html2canvas from "html2canvas";
 import Konva from "konva";
 import { useEffect, useRef, useState } from "react";
-import { Group, Rect, Circle, RegularPolygon, Ellipse } from "react-konva";
+import { Group, Rect, Circle, RegularPolygon } from "react-konva";
 import { Html } from "react-konva-utils";
 import HtmlText from "../htmlText/HtmlText";
 import { ControlType, ShapeType } from "../../types";
@@ -20,7 +20,6 @@ const Shape = (props: propsType) => {
     width,
     height,
     tool,
-    html,
     id,
     text,
     shapeType,
