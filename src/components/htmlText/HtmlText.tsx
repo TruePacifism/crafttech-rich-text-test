@@ -1,6 +1,11 @@
 import { forwardRef } from "react";
 
-const HtmlText = forwardRef(({ html, id }: any, ref: any) => {
+type propsType = {
+  html: string;
+  id: string;
+};
+
+const HtmlText = forwardRef<HTMLDivElement, propsType>(({ html, id }, ref) => {
   return (
     <div
       id={`htmltext_${id}`}
